@@ -4,89 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer HTML</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+
+    <style>
+        .verde-oscuro {
+            background-color: #15593d;
+        }
+    </style>
+
 </head>
 <body>
-    <h1>Fabricio Amores Monge</h1>
+    <header class="verde-oscuro text-white text-center py-4">
+        <h1>Fabricio Amores Monge</h1>
+    </header>
 
-    <div>
-        <h2>Sobre mí</h2>
-        <p>Hola, soy Fabricio Amores Monge. Tengo 20 años y soy estudiante de Informatica Empresarial
-            Actualmente estoy en mi ultimo año de carrera y me apasiona el mundo de la tecnologia y la programacion.
-            Me gusta aprender cosas nuevas y enfrentar desafios que me permitan crecer tanto personal como profesionalmente.
-        </p>
-        <h3>Intereses</h3>
-        <ul>
-            <li>Gym</li>
-            <li>Leer</li>
-            <li>Tecnologia</li>
-            <li>Deportes en general</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Foto mia y de mis mascotas</h2>
-        <img src="imagenes/foto mia.jpeg" alt="Imagen de Fabricio Amores Monge" width="200">
-        <img src="imagenes/perros.png" alt="Imagen de perros" width="200">
+    <div class="container mt-4">
 
-        <H2>Video de una de mis canciones preferidas</H2>
-        <video width="620" height="440" controls><source src="imagenes/Video.mp4" type="video/mp4"></video>
-    </div>
-    
-    <div>
-        <h2>Mis habilidades</h2>
-        <table>
-            <tr>
-                <th>Habilidad</th>
-                <th>Nivel</th>
-                <th>Experiencia</th>
-                <th>Descripción</th>
-            </tr>
-            <tr>
-                <td>Programación</td>
-                <td>Junior</td>
-                <td>3 años</td>
-                <td>Conocimientos en Java, JavaScript, C#, TypeScript y demas</td>
-            </tr>
-            <tr>
-                <td>Diseño Web</td>
-                <td>Junior</td>
-                <td>2 años</td>
-                <td>Conocimientos en HTML, CSS y JavaScript y NextJs</td>
-            </tr>
-            <tr>
-                <td>Base de Datos</td>
-                <td>Junior</td>
-                <td>1 años</td>
-                <td>Conocimientos en SQL, MySQL, TSQL y Prisma</td>
-            </tr>
-        </table>
-    </div>
+        <div class="row">
 
-    <div>
-        <h2>Enlaces</h2>
-        <ul>
-            <li><a href="https://www.crunchyroll.com/">Crunchyroll</a></li>
-            
-        </ul>
-        <h3>Enlace local</h3>
-        <ul>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
+            <div class="col-md-8">
 
-    <div>
-        <h3>Mis comidas favoritas en orden del 1 al 3</h3>
-        <ul>
-            <li>Arroz con camarones</li>
-            <li>Pollo a la plancha</li>
-            <li>Lasagna</li>
-        </ul>
-        <h3>Mis deportes favoritos sin orden</h3>
-        <ul>
-            <li>Hipertrofia(Gimnasio)</li>
-            <li>Basketball</li>
-            <li>Futbol</li>
-        </ul>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Sobre mí</h2>
+                        <p class="card-text">
+                            Hola, soy Fabricio Amores Monge. Tengo 20 años y soy estudiante de Informatica Empresarial.
+                            Actualmente estoy en mi ultimo año de carrera y me apasiona el mundo de la tecnologia. Con el objetivo de crear una carrera en el ambito de la cyberseguridad.
+                        </p>
+
+                        <h5>Intereses</h5>
+                        <ul>
+                            <li>Gym</li>
+                            <li>Leer</li>
+                            <li>Tecnologia</li>
+                            <li>Deportes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h2>Foto mía y mascotas</h2>
+
+                    <img src="imagenes/foto mia.jpeg" class="img-fluid mb-2" alt="Foto mia">
+                    <img src="imagenes/perros.png" class="img-fluid mb-2" alt="Perros">
+
+                    <h3>Video favorito</h3>
+                    <video class="img-fluid" controls>
+                        <source src="imagenes/Video.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="mb-4">
+                    <h2>Mis habilidades</h2>
+
+                    <table class="table table-striped table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Habilidad</th>
+                                <th>Nivel</th>
+                                <th>Experiencia</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Programación</td>
+                                <td>Junior</td>
+                                <td>3 años</td>
+                                <td>Java, JS, C#, TypeScript</td>
+                            </tr>
+                            <tr>
+                                <td>Diseño Web</td>
+                                <td>Junior</td>
+                                <td>2 años</td>
+                                <td>HTML, CSS, JS, NextJS</td>
+                            </tr>
+                            <tr>
+                                <td>Base de Datos</td>
+                                <td>Junior</td>
+                                <td>1 año</td>
+                                <td>SQL, MySQL, TSQL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="mb-4">
+                    <h3>Enlaces</h3>
+
+                    <a href="https://www.crunchyroll.com/" class="btn btn-primary mb-2 w-100">Crunchyroll</a>
+
+                    <a href="contacto.html" class="btn btn-success w-100">Contacto</a>
+                </div>
+
+                <div class="mb-4">
+                    <h4>Comidas favoritas</h4>
+                    <ul>
+                        <li>Arroz con camarones</li>
+                        <li>Pollo a la plancha</li>
+                        <li>Lasagna</li>
+                    </ul>
+
+                    <h4>Deportes favoritos</h4>
+                    <ul>
+                        <li>Gym</li>
+                        <li>Basketball</li>
+                        <li>Fútbol</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+    <footer class="verde-oscuro text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">© 2026 Fabricio Amores</p>
+            <small>Desarrollado con Bootstrap 5</small>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
 </body>
 </html>
